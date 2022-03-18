@@ -1,3 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+
 .App {
-  text-align: center;
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #dbdbdb;
 }
+
+h1 {
+  font-size: 3rem;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.search {
+  width: 50%;
+  margin: 3rem 0 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1.75rem;
+  border-radius: 3rem;
+  background: white;
+  box-shadow: 5px 5px 7px #a1a1a1, -5px -5px 7px #a1a1a1;
+}
+
+.search input {
+  flex: 1;
+  border: none;
+  font-size: 1.5rem;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 500;
+  padding-right: 1rem;
+  outline: none;
+  color: black;
+  background-color: white;
+}
+
+.search img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+}
+
+.card-head img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  min-height: 150px;
+  background-color: white;
+}
+
+.card-body p {
+  font-size: 13px;
+  margin: 0 0 40px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.tag {
+  background-color: #cd5b9f;
+  border-radius: 50px;
+  font-size: 12px;
+  margin: 0;
+  color: #fff;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* img {
+  border-radius: 5px 5px 0 0;
+} */
